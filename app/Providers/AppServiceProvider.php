@@ -38,8 +38,8 @@ class AppServiceProvider extends ServiceProvider
             $view->with('user', Auth::user());
         });
       
-        $obj = new SettingsService();
-        view()->share('settings', $obj->list());
+        // $obj = new SettingsService();
+        // view()->share('settings', $obj->list());
     
     }
 }
